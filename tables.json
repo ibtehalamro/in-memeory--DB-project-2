@@ -1,0 +1,42 @@
+[
+  {
+    "tableName": "person",
+    "columns": [
+      {
+        "columnName": "key",
+        "datatype": "int",
+        "primaryKey": "true"
+      },
+      {
+        "columnName": "first",
+        "datatype": "string"
+      },
+      {
+        "columnName": "last",
+        "datatype": "string"
+      }
+    ],
+    "tableConstraints": {
+      "onUpdate": "CASCADE",
+      "onDelete": "CASCADE"
+    }
+  },
+  {
+    "tableName": "university",
+    "columns": [
+      {
+        "columnName": "key",
+        "datatype": "int"
+      },
+      {
+        "columnName": "name",
+        "datatype": "string"
+      }
+    ],
+    "tableConstraints": {
+      "foreignKey": "person_key",
+      "foreignKeyColumn": "key",
+      "foreignKeyTable": "person"
+    }
+  }
+]

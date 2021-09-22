@@ -1,0 +1,17 @@
+@import "applicationStyle.css";
+@import "login.css";
+
+.error {
+    background-image: url("../images/error.png");
+    border: 1px solid saddlebrown;
+    background-origin: border-box;
+    background-size: cover;
+    font-size: 3rem;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: relative;
+    color: green;
+
+}

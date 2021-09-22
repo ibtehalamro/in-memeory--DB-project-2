@@ -1,0 +1,13 @@
+.login
+{
+  display: grid;
+  place-items: center;
+
+}
+.login-body{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+}
